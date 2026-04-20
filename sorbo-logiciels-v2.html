@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logiciels Métiers — Sorbo-Ingénierie</title>
+<script>
+(function () {
+  var k = 'sorbo-theme';
+  var s = localStorage.getItem(k);
+  var t = (s === 'light' || s === 'dark') ? s : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sorbo-logiciels-v2.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="site-nav" id="site-nav">
+  <a href="#" class="nav-brand">
+    <img src="images/logo.mr.png" alt="Sorbo-Ingénierie — Ingénierie, Formation, Logiciels" class="nav-brand-logo" width="200" height="80" decoding="async">
+    <div class="nav-brand-text">
+      <span class="nav-brand-sub">Logiciels Métiers</span>
+    </div>
+  </a>
+  <div class="nav-shell">
+    <button type="button" class="nav-burger" id="nav-burger" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="logiciels.html">Logiciels</a>
+      <a href="#avantages">Avantages</a>
+      <a href="#temoignages">Témoignages</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer thème clair ou sombre" title="Thème clair / sombre">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="https://sorbo-ingenierie.ci/contact" class="nav-btn">Demander une démo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-line"></span>
+      Génie Civil · Côte d'Ivoire
+    </div>
+    <h1 class="hero-h1">
+      Des logiciels pensés<br>
+      pour les <em>ingénieurs<br>
+      du terrain.</em>
+    </h1>
+    <p class="hero-lead">
+      Sorbo-Ingénierie développe des outils métiers de précision pour les bureaux d'études 
+      et professionnels du génie civil. Calculs rigoureux, résultats fiables, 
+      conformité normative garantie.
+    </p>
+    <div class="hero-actions">
+      <a href="#solutions" class="btn-red">
+        Découvrir les logiciels
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://sorbo-ingenierie.ci/contact" class="btn-outline">
+        Nous contacter
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-label">NOS SOLUTIONS</div>
+    <div class="hero-software-list">
+      <div class="hero-sw-card active">
+        <div class="hero-sw-num">01 / STRUCTURE ROUTIÈRE</div>
+        <div class="hero-sw-name">STR-Chaussée</div>
+        <div class="hero-sw-desc">Dimensionnement structurel des chaussées selon les normes CEBTP et LCPC. Calcul multicouches, analyse de trafic, rapports techniques automatisés.</div>
+        <span class="hero-sw-tag">Disponible maintenant</span>
+      </div>
+      <div class="hero-sw-card">
+        <div class="hero-sw-num">02 / HYDRAULIQUE ROUTIÈRE</div>
+        <div class="hero-sw-name">OH-Route v1</div>
+        <div class="hero-sw-desc">Dimensionnement des ouvrages hydrauliques de drainage routier. Buses, dalots, caniveaux — méthodes hydrologiques adaptées à l'Afrique subsaharienne.</div>
+        <span class="hero-sw-tag">Nouveau</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS BAR -->
+<div class="numbers-bar">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="number-item reveal">
+        <div class="number-val"><span class="js-count" data-target="2">0</span><sup>+</sup></div>
+        <div class="number-desc">Logiciels métiers spécialisés</div>
+      </div>
+      <div class="number-item reveal delay-1">
+        <div class="number-val"><span class="js-count" data-target="100">0</span><sup>%</sup></div>
+        <div class="number-desc">Conformité aux normes en vigueur</div>
+      </div>
+      <div class="number-item reveal delay-2">
+        <div class="number-val"><span class="js-count" data-target="-80">0</span><sup>%</sup></div>
+        <div class="number-desc">De temps de calcul par rapport au manuel</div>
+      </div>
+      <div class="number-item reveal delay-3">
+        <div class="number-val" aria-label="Infini">∞</div>
+        <div class="number-desc">Mises à jour et support inclus</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SOLUTIONS -->
+<div id="solutions"></div>
+
+<!-- STR-CHAUSSÉE -->
+<section class="product-section white-bg">
+  <div class="wrap">
+    <div class="product-grid">
+      <div class="product-info reveal">
+        <div class="product-num">01</div>
+        <div class="product-cat">Structure routière</div>
+        <h2 class="product-name">STR-Chaussée</h2>
+        <p class="product-subtitle">Le logiciel de référence pour le dimensionnement des structures de chaussées</p>
+        <p class="product-desc">
+          STR-Chaussée accompagne les ingénieurs à travers tout le processus de dimensionnement 
+          structurel des routes. De l'étude du trafic à la rédaction du rapport final, 
+          chaque étape est guidée, calculée et documentée automatiquement — selon les méthodes 
+          reconnues adaptées aux conditions africaines.
+        </p>
+        <div class="product-feats">
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Dimensionnement multicouches selon CEBTP, LCPC/SETRA avec catalogue de structures adapté</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Analyse complète du trafic et calcul des charges équivalentes (essieu de référence 13 T)</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Évaluation de la portance de la plateforme — CBR, module de déformation</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Vérification des contraintes et déformations admissibles par couche</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Génération automatique de notes de calcul et rapports techniques exportables</div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <span class="product-tag">Trafic</span>
+          <span class="product-tag">Géotechnique</span>
+          <span class="product-tag">Normes africaines</span>
+          <span class="product-tag">Rapport PDF</span>
+          <span class="product-tag">Multi-couches</span>
+        </div>
+        <a href="https://sorbo-ingenierie.ci/contact" class="btn-red">
+          Obtenir STR-Chaussée
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="product-panel reveal delay-2" id="str-structure-panel">
+        <div class="panel-header">
+          <div class="panel-title">Analyse de structure</div>
+          <div class="panel-status">Calcul terminé</div>
+        </div>
+        <div class="panel-metric-grid">
+          <div class="panel-metric">
+            <div class="panel-metric-label">Durée de service</div>
+            <div class="panel-metric-val red"><span class="js-str-metric" data-target="15" data-suffix=" ans">0</span></div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">Classe trafic</div>
+            <div class="panel-metric-val js-str-fade">T3</div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">TJMA véhicules</div>
+            <div class="panel-metric-val"><span class="js-str-metric" data-target="3200" data-format="space">0</span></div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">CBR sol (%) </div>
+            <div class="panel-metric-val"><span class="js-str-metric" data-target="8" data-suffix=" %">0</span></div>
+          </div>
+        </div>
+        <div class="panel-bar-section">
+          <div class="panel-bar-title">Épaisseurs recommandées (cm)</div>
+          <div class="p-bar">
+            <div class="p-bar-name">Surface</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="17"></div></div>
+            <div class="p-bar-val"><span class="js-str-metric" data-target="5" data-suffix="">0</span> cm</div>
+          </div>
+          <div class="p-bar">
+            <div class="p-bar-name">Base GB</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="33"></div></div>
+            <div class="p-bar-val"><span class="js-str-metric" data-target="10" data-suffix="">0</span> cm</div>
+          </div>
+          <div class="p-bar">
+            <div class="p-bar-name">Fondation</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="67"></div></div>
+            <div class="p-bar-val"><span class="js-str-metric" data-target="20" data-suffix="">0</span> cm</div>
+          </div>
+          <div class="p-bar">
+            <div class="p-bar-name">Sous-fond</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="100"></div></div>
+            <div class="p-bar-val"><span class="js-str-metric" data-target="30" data-suffix="">0</span> cm</div>
+          </div>
+        </div>
+        <div class="panel-result">
+          <div class="panel-result-icon">✓</div>
+          <div class="panel-result-text">Structure <span class="panel-result-val">validée</span> — toutes les couches satisfont aux critères de dimensionnement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OH-ROUTE -->
+<section class="product-section grey-bg">
+  <div class="wrap">
+    <div class="product-grid flip">
+      <div class="product-panel reveal delay-2">
+        <div class="panel-header">
+          <div class="panel-title">Calcul hydraulique</div>
+          <div class="panel-status">Dimensionnement</div>
+        </div>
+        <div class="panel-metric-grid">
+          <div class="panel-metric">
+            <div class="panel-metric-label">Période retour</div>
+            <div class="panel-metric-val red">T = 10 ans</div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">Débit de pointe</div>
+            <div class="panel-metric-val">4,8 m³/s</div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">Bassin versant</div>
+            <div class="panel-metric-val">12,4 km²</div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">Coeff. ruiss.</div>
+            <div class="panel-metric-val">0,45</div>
+          </div>
+        </div>
+        <div class="panel-rows">
+          <div class="panel-row">
+            <div class="panel-row-label">Méthode de calcul</div>
+            <div class="panel-row-val">Rationnelle / ORSTOM</div>
+          </div>
+          <div class="panel-row">
+            <div class="panel-row-label">Type d'ouvrage</div>
+            <div class="panel-row-val">Dalot 2 × 2 m</div>
+          </div>
+          <div class="panel-row">
+            <div class="panel-row-label">Capacité hydraulique</div>
+            <div class="panel-row-val">5,6 m³/s</div>
+          </div>
+          <div class="panel-row">
+            <div class="panel-row-label">Marge de sécurité</div>
+            <div class="panel-row-val panel-row-val--accent">+ 17 %</div>
+          </div>
+        </div>
+        <div class="panel-result">
+          <div class="panel-result-icon">✓</div>
+          <div class="panel-result-text">Dalot 2×2 m <span class="panel-result-val">recommandé</span> — capacité suffisante avec marge de sécurité</div>
+        </div>
+      </div>
+      <div class="product-info reveal">
+        <div class="product-num">02</div>
+        <div class="product-cat">Hydraulique routière</div>
+        <h2 class="product-name">OH-Route <span class="product-name-version">v1</span></h2>
+        <p class="product-subtitle">Dimensionnement des ouvrages hydrauliques de drainage routier</p>
+        <p class="product-desc">
+          OH-Route v1 est l'outil spécialisé pour concevoir et vérifier les ouvrages de drainage 
+          le long des routes. Il intègre des méthodes hydrologiques adaptées aux bassins versants 
+          d'Afrique subsaharienne — pluviométrie locale, types de sol, comportement des ouvrages 
+          en régime de crue.
+        </p>
+        <div class="product-feats">
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Calcul des débits de crue par méthodes rationnelle et ORSTOM, calibrées pour l'Afrique</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Dimensionnement des buses circulaires/elliptiques, dalots et caniveaux avec vérification hydraulique</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Courbes pluie-débit basées sur les données pluviométriques locales de Côte d'Ivoire</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Calcul des coefficients de ruissellement selon le contexte du terrain africain</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text">Plans schématiques et notes de calcul automatiques pour constitution des dossiers</div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <span class="product-tag">Hydrologie</span>
+          <span class="product-tag">Buses & Dalots</span>
+          <span class="product-tag">Caniveaux</span>
+          <span class="product-tag">Bassins versants</span>
+          <span class="product-tag">Notes de calcul</span>
+        </div>
+        <a href="https://sorbo-ingenierie.ci/contact" class="btn-red">
+          Obtenir OH-Route v1
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVANTAGES -->
+<section class="section white-bg" id="avantages">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-label">Pourquoi nos logiciels</div>
+      <h2 class="section-h2">Des avantages <em>concrets</em><br>pour vos études</h2>
+    </div>
+    <div class="avantages-grid">
+      <div class="avantage-card reveal delay-1">
+        <div class="avantage-num">01</div>
+        <div class="avantage-title">Précision et fiabilité des calculs</div>
+        <p class="avantage-text">Des algorithmes éprouvés pour des résultats précis, reproductibles et traçables. Chaque calcul est documenté et vérifiable, à la hauteur des exigences des maîtres d'ouvrage.</p>
+        <div class="avantage-bar"></div>
+      </div>
+      <div class="avantage-card reveal delay-2">
+        <div class="avantage-num">02</div>
+        <div class="avantage-title">Conformité normative permanente</div>
+        <p class="avantage-text">Mises à jour régulières pour intégrer les évolutions des normes CEBTP, LCPC et SETRA. Vos études restent toujours conformes aux réglementations en vigueur.</p>
+        <div class="avantage-bar"></div>
+      </div>
+      <div class="avantage-card reveal delay-1">
+        <div class="avantage-num">03</div>
+        <div class="avantage-title">Conçu pour l'Afrique</div>
+        <p class="avantage-text">Paramètres calibrés pour les réalités africaines : données climatiques locales, types de sols tropicaux, matériaux disponibles et pratiques de construction du terrain.</p>
+        <div class="avantage-bar"></div>
+      </div>
+      <div class="avantage-card reveal delay-2">
+        <div class="avantage-num">04</div>
+        <div class="avantage-title">Gain de temps considérable</div>
+        <p class="avantage-text">Réduisez vos délais d'études jusqu'à 80 %. Ce qui prenait des heures de calculs manuels s'effectue désormais en quelques secondes avec une fiabilité accrue.</p>
+        <div class="avantage-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="section grey-bg" id="temoignages">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-label">Témoignages clients</div>
+      <h2 class="section-h2">Ce que disent<br>ceux qui les utilisent</h2>
+    </div>
+    <div class="testi-layout">
+      <div class="testi-card reveal delay-1">
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-text">Les logiciels développés par cette équipe ont révolutionné notre manière de travailler. La précision des calculs, la simplicité d'utilisation et l'intégration des dernières normes nous permettent de gagner un temps précieux et d'améliorer la qualité de nos projets.</p>
+        <div class="testi-author">
+          <div class="testi-initials">AZ</div>
+          <div>
+            <div class="testi-name">Alexis Zoubabela</div>
+            <div class="testi-role">Ingénieur projet · <span class="testi-company">PSALM CORPORATION</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal delay-2">
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-text">Après avoir testé plusieurs solutions, nous avons enfin trouvé des outils à la hauteur de nos attentes. L'interface intuitive, les fonctionnalités avancées et le support réactif font toute la différence dans nos projets hydrauliques quotidiens.</p>
+        <div class="testi-author">
+          <div class="testi-initials">ND</div>
+          <div>
+            <div class="testi-name">Nathan DJETOU</div>
+            <div class="testi-role">Ingénieur hydrologue-hydraulicien · <span class="testi-company">ETECO</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="reveal">
+      <div class="cta-label">Passez à l'action</div>
+      <h2 class="cta-h2">Prêt à travailler<br>avec <em>plus de précision ?</em></h2>
+      <p class="cta-p">Démo gratuite, formation incluse, support expert réactif. Rejoignez les ingénieurs qui ont choisi des outils à la hauteur de leurs projets.</p>
+    </div>
+    <div class="cta-actions reveal delay-2">
+      <a href="https://sorbo-ingenierie.ci/contact" class="btn-red">
+        Demander une démo gratuite
+      </a>
+      <a href="mailto:logiciels@sorbo-ingenierie.ci" class="btn-outline btn-outline-cta">
+        Envoyer un email
+      </a>
+      <div class="cta-contact">
+        <a href="mailto:logiciels@sorbo-ingenierie.ci">logiciels@sorbo-ingenierie.ci</a><br>
+        <a href="tel:+2250150123050">(+225) 01 50 12 30 50</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div>
+        <a href="https://sorbo-ingenierie.ci" class="footer-brand-link">
+          <img src="images/logo.mr.png" alt="Sorbo-Ingénierie" class="footer-logo" width="220" height="88" decoding="async">
+        </a>
+        <p class="footer-brand-desc">Bureau d'études spécialisé en génie civil à Abidjan. Expertise, formations professionnelles et logiciels métiers pour les professionnels de la construction.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Logiciels</h5>
+        <a href="logiciels.html#str-chaussee">STR-Chaussée</a>
+        <a href="logiciels.html#oh-route">OH-Route v1</a>
+        <a href="https://sorbo-ingenierie.ci/contact">Demander une démo</a>
+      </div>
+      <div class="footer-col">
+        <h5>Entreprise</h5>
+        <a href="https://sorbo-ingenierie.ci/">Accueil</a>
+        <a href="https://sorbo-ingenierie.ci/notre-entreprise">Notre entreprise</a>
+        <a href="https://sorbo-ingenierie.ci/ingenierie">Ingénierie</a>
+        <a href="https://sorbo-ingenierie.ci/nos-formations">Formations</a>
+        <a href="https://sorbo-ingenierie.ci/nos-projets">Nos projets</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:logiciels@sorbo-ingenierie.ci">logiciels@sorbo-ingenierie.ci</a>
+        <a href="mailto:contact@sorbo.ingenierie.ci">contact@sorbo.ingenierie.ci</a>
+        <a href="tel:+2250150123050">(+225) 01 50 12 30 50</a>
+        <a href="tel:+2252121802126">(+225) 21 21 80 21 26</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Sorbo-Ingénierie · SARL · RC : CI-ABJ-03-2022-B12-03946 · N° CC : 2242797T</span>
+      <span>Abidjan, Côte d'Ivoire — <a href="https://sorbo-ingenierie.ci">sorbo-ingenierie.ci</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="sorbo-logiciels-v2.js" defer></script>
+
+</body>
+</html>

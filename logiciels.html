@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos logiciels métiers — Sorbo-Ingénierie</title>
+<script>
+(function () {
+  var k = 'sorbo-theme';
+  var s = localStorage.getItem(k);
+  var t = (s === 'light' || s === 'dark') ? s : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sorbo-logiciels-v2.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav">
+  <a href="sorbo-logiciels-v2.html" class="nav-brand">
+    <img src="images/logo.mr.png" alt="Sorbo-Ingénierie — Ingénierie, Formation, Logiciels" class="nav-brand-logo" width="200" height="80" decoding="async">
+    <div class="nav-brand-text">
+      <span class="nav-brand-sub">Logiciels Métiers</span>
+    </div>
+  </a>
+  <div class="nav-shell">
+    <button type="button" class="nav-burger" id="nav-burger" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="logiciels.html" class="is-active" aria-current="page">Logiciels</a>
+      <a href="sorbo-logiciels-v2.html#avantages">Avantages</a>
+      <a href="sorbo-logiciels-v2.html#temoignages">Témoignages</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer thème clair ou sombre" title="Thème clair / sombre">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="https://sorbo-ingenierie.ci/contact" class="nav-btn">Demander une démo</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="section-label">Catalogue</div>
+    <h1 class="section-h2 large">Nos logiciels <em>métiers</em></h1>
+    <p class="section-p">Outils de calcul et de dimensionnement pour le génie civil, conçus pour les bureaux d’études et alignés sur les référentiels en vigueur. Choisissez une solution et contactez-nous pour une démo ou un devis.</p>
+  </div>
+</section>
+
+<section class="software-catalog section white-bg">
+  <div class="wrap">
+    <div class="software-grid">
+      <article id="str-chaussee" class="software-card reveal">
+        <div class="sw-card-header">
+          <div class="sw-card-header-media">
+            <div class="sw-card-header-bg" aria-hidden="true"></div>
+            <img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?auto=format&fit=crop&w=1200&q=80" alt="" class="sw-card-cover" width="1200" height="675" loading="lazy" decoding="async">
+          </div>
+          <div class="sw-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18h16"/>
+              <path d="M5.5 18 8 10h8l2.5 8"/>
+              <path d="M8.5 10 9.5 6h5l1 4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sw-card-body">
+          <span class="sw-card-cat">Structure routière</span>
+          <h2 class="sw-card-title">STR-Chaussée</h2>
+          <p class="sw-card-desc">Dimensionnement multicouches des chaussées (CEBTP, LCPC/SETRA), trafic, CBR et rapports techniques — pour des notes de calcul fiables et exportables.</p>
+          <a href="https://sorbo-ingenierie.ci/contact" class="btn-red">Obtenir le logiciel</a>
+        </div>
+      </article>
+
+      <article id="oh-route" class="software-card reveal delay-1">
+        <div class="sw-card-header sw-card-header--hydro">
+          <div class="sw-card-header-media">
+            <div class="sw-card-header-bg" aria-hidden="true"></div>
+            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80" alt="" class="sw-card-cover" width="1200" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="sw-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3.5c-3.2 5-5.5 8.8-5.5 12.3a5.5 5.5 0 1 0 11 0c0-3.5-2.3-7.3-5.5-12.3z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sw-card-body">
+          <span class="sw-card-cat">Hydraulique routière</span>
+          <h2 class="sw-card-title">OH-Route <span class="product-name-version">v1</span></h2>
+          <p class="sw-card-desc">Dimensionnement des ouvrages de drainage : débits de crue, buses, dalots et caniveaux, avec méthodes adaptées aux bassins versants d’Afrique subsaharienne.</p>
+          <a href="https://sorbo-ingenierie.ci/contact" class="btn-red">Obtenir le logiciel</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div>
+        <a href="https://sorbo-ingenierie.ci" class="footer-brand-link">
+          <img src="images/logo.mr.png" alt="Sorbo-Ingénierie" class="footer-logo" width="220" height="88" decoding="async">
+        </a>
+        <p class="footer-brand-desc">Bureau d'études spécialisé en génie civil à Abidjan. Expertise, formations professionnelles et logiciels métiers pour les professionnels de la construction.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Logiciels</h5>
+        <a href="logiciels.html#str-chaussee">STR-Chaussée</a>
+        <a href="logiciels.html#oh-route">OH-Route v1</a>
+        <a href="https://sorbo-ingenierie.ci/contact">Demander une démo</a>
+      </div>
+      <div class="footer-col">
+        <h5>Entreprise</h5>
+        <a href="https://sorbo-ingenierie.ci/">Accueil</a>
+        <a href="https://sorbo-ingenierie.ci/notre-entreprise">Notre entreprise</a>
+        <a href="https://sorbo-ingenierie.ci/ingenierie">Ingénierie</a>
+        <a href="https://sorbo-ingenierie.ci/nos-formations">Formations</a>
+        <a href="https://sorbo-ingenierie.ci/nos-projets">Nos projets</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:logiciels@sorbo-ingenierie.ci">logiciels@sorbo-ingenierie.ci</a>
+        <a href="mailto:contact@sorbo.ingenierie.ci">contact@sorbo.ingenierie.ci</a>
+        <a href="tel:+2250150123050">(+225) 01 50 12 30 50</a>
+        <a href="tel:+2252121802126">(+225) 21 21 80 21 26</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Sorbo-Ingénierie · SARL · RC : CI-ABJ-03-2022-B12-03946 · N° CC : 2242797T</span>
+      <span>Abidjan, Côte d'Ivoire — <a href="https://sorbo-ingenierie.ci">sorbo-ingenierie.ci</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="sorbo-logiciels-v2.js" defer></script>
+
+</body>
+</html>
