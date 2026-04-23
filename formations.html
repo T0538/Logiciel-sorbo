@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="images/logo.mr.png">
+<title>Nos Formations — Sorbo-Ingénierie</title>
+<script>
+(function () {
+  var k = 'sorbo-theme';
+  var s = localStorage.getItem(k);
+  var t = (s === 'light' || s === 'dark') ? s : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sorbo-logiciels-v2.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav">
+  <a href="index.html" class="nav-brand">
+    <img src="images/logo.mr.png" alt="Sorbo-Ingénierie — Ingénierie, Formation, Logiciels" class="nav-brand-logo" width="200" height="80" decoding="async">
+    <div class="nav-brand-text">
+      <span class="nav-brand-sub">Solutions Métiers</span>
+    </div>
+  </a>
+  <div class="nav-shell">
+    <button type="button" class="nav-burger" id="nav-burger" aria-controls="nav-links" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+      <span class="nav-burger-bar" aria-hidden="true"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <div class="nav-item-has-mega">
+        <a href="logiciels.html" class="nav-link-mega">Nos Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <a href="str-chaussee.html" class="mega-card mega-str" style="background-image: url('https://images.unsplash.com/photo-1519817914152-22d216bb9170?auto=format&fit=crop&w=600&q=80');">
+              <div class="mega-card-content">
+                <span class="mega-tag">Structure routière</span>
+                <h4>STR-Chaussée</h4>
+                <p>Dimensionnement multicouches des chaussées (CEBTP, LCPC)</p>
+              </div>
+            </a>
+            <a href="oh-route.html" class="mega-card mega-oh" style="background-image: url('https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=600&q=80');">
+              <div class="mega-card-content">
+                <span class="mega-tag">Hydraulique routière</span>
+                <h4>OH-Route v1</h4>
+                <p>Dimensionnement des ouvrages de drainage et débits de crue</p>
+              </div>
+            </a>
+          </div>
+          <div class="mega-menu-footer">
+            <a href="logiciels.html">Voir tout le catalogue <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </div>
+      </div>
+      <a href="formations.html" class="is-active" aria-current="page">Formations</a>
+      <a href="a-propos.html">À propos de nous</a>
+      <a href="contact.html">Contact</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer thème clair ou sombre" title="Thème clair / sombre">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2 suicide-bar-fill;M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="contact.html" class="nav-btn">Demander une formation</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="section-label">Expertise Logicielle</div>
+    <h1 class="section-h2 large">Formations sur nos <em>Solutions</em></h1>
+    <p class="section-p">Maîtrisez nos outils métiers pour optimiser vos études techniques. Nous proposons des formations spécifiques dédiées exclusivement à l'utilisation de nos logiciels, animées par nos ingénieurs concepteurs.</p>
+  </div>
+</section>
+
+<section class="section white-bg">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+      
+      <!-- Carte STR-Chaussée -->
+      <div class="testi-card reveal" style="border-top: 4px solid var(--red); display: flex; flex-direction: column;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+          <div style="width: 48px; height: 48px; background: var(--grey-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🛣️</div>
+          <h3 style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 0;">Maîtrise de STR-Chaussée</h3>
+        </div>
+        <p style="color: var(--grey-mid); line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Formation technique approfondie sur l'utilisation du logiciel STR-Chaussée. Apprenez à paramétrer le trafic, évaluer la portance et générer vos notes de calcul selon les normes CEBTP et LCPC.</p>
+        
+        <div style="background: var(--off-white); border: 1px solid var(--grey-line); border-radius: 6px; padding: 16px; margin-bottom: 24px;">
+          <h4 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-soft); margin-bottom: 12px;">Ce que vous apprendrez :</h4>
+          <ul style="list-style: none; padding: 0; font-size: 14px; color: var(--grey-dark);">
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Saisie des données de trafic</li>
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Choix des structures multicouches</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Export et analyse des rapports</li>
+          </ul>
+        </div>
+        
+        <a href="contact.html" class="btn-red" style="justify-content: center;">Demander le programme</a>
+      </div>
+
+      <!-- Carte OH-Route -->
+      <div class="testi-card reveal delay-1" style="border-top: 4px solid var(--red); display: flex; flex-direction: column;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+          <div style="width: 48px; height: 48px; background: var(--grey-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 24px;">💧</div>
+          <h3 style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; margin: 0;">Conception avec OH-Route v1</h3>
+        </div>
+        <p style="color: var(--grey-mid); line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Exploitez toutes les fonctionnalités de OH-Route v1. Dimensionnez vos ouvrages hydrauliques (buses, dalots, caniveaux) avec des méthodes adaptées aux bassins versants d'Afrique subsaharienne.</p>
+        
+        <div style="background: var(--off-white); border: 1px solid var(--grey-line); border-radius: 6px; padding: 16px; margin-bottom: 24px;">
+          <h4 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-soft); margin-bottom: 12px;">Ce que vous apprendrez :</h4>
+          <ul style="list-style: none; padding: 0; font-size: 14px; color: var(--grey-dark);">
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Méthodes Rationnelle & ORSTOM</li>
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Dimensionnement des dalots</li>
+            <li style="display: flex; gap: 8px;"><span style="color: var(--red);">✓</span> Justification des marges de sécurité</li>
+          </ul>
+        </div>
+
+        <a href="contact.html" class="btn-red" style="justify-content: center;">Demander le programme</a>
+      </div>
+
+    </div>
+
+    <!-- Bannière de clarification -->
+    <div class="human-badge" style="margin-top: 60px; display: flex; max-width: 800px; margin-left: auto; margin-right: auto; padding: 24px;">
+      <span class="human-badge-icon" style="font-size: 24px;">💡</span>
+      <div>
+        <h4 style="font-family: 'Barlow Condensed', sans-serif; font-size: 18px; text-transform: uppercase; margin-bottom: 4px; color: var(--grey-dark);">Notre approche pédagogique</h4>
+        <span class="human-badge-text" style="font-weight: 400; line-height: 1.5;">Nos formations sont exclusivement dédiées à la prise en main de nos logiciels <strong>STR-Chaussée</strong> et <strong>OH-Route v1</strong>. Nous ne proposons pas de cours sur des logiciels tiers (ex: AutoCAD, piste, mensura) ni de formation académique en génie civil.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-brand-link">
+          <img src="images/logo.mr.png" alt="Sorbo-Ingénierie" class="footer-logo" width="220" height="88" decoding="async">
+        </a>
+        <p class="footer-brand-desc">Bureau d'études spécialisé en génie civil à Abidjan. Expertise, formations professionnelles et solutions métiers pour les professionnels de la construction.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Nos Solutions</h5>
+        <a href="logiciels.html#str-chaussee">STR-Chaussée</a>
+        <a href="logiciels.html#oh-route">OH-Route v1</a>
+        <a href="contact.html">Demander une démo</a>
+      </div>
+      <div class="footer-col">
+        <h5>Entreprise</h5>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos de nous</a>
+        <a href="formations.html">Formations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:logiciels@sorbo-ingenierie.ci">logiciels@sorbo-ingenierie.ci</a>
+        <a href="tel:+2250150123050">(+225) 01 50 12 30 50</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Sorbo-Ingénierie · SARL</span>
+      <span>Abidjan, Côte d'Ivoire</span>
+    </div>
+  </div>
+</footer>
+
+<script src="sorbo-logiciels-v2.js" defer></script>
+
+</body>
+</html>
