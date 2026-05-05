@@ -164,6 +164,43 @@
 
   initStrStructurePanel();
 
+  function initHeroSlider() {
+    var slides = document.querySelectorAll('.hero-slide');
+    var indicators = document.querySelectorAll('.indicator');
+    if (!slides.length) return;
+    var current = 0;
+    var timer = null;
+    function show(index) {
+      slides.forEach(function (s, i) {
+        s.classList.toggle('active', i === index);
+        if (indicators[i]) indicators[i].classList.toggle('active', i === index);
+      });
+      current = index;
+    }
+    function next() {
+      show((current + 1) % slides.length);
+    }
+    function start() {
+      stop();
+      timer = setInterval(next, 6000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+    }
+    indicators.forEach(function (ind) {
+      ind.addEventListener('click', function () {
+        var idx = parseInt(this.getAttribute('data-index'), 10);
+        if (!isNaN(idx)) {
+          show(idx);
+          start();
+        }
+      });
+    });
+    start();
+  }
+
+  initHeroSlider();
+
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) e.target.classList.add('up');
