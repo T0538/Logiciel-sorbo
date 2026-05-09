@@ -602,6 +602,250 @@ nav.site-nav.is-nav-open .nav-burger-bar:nth-child(3) {
 }
 .avantage-card:hover .avantage-bar::after { width: 100%; }
 
+/* ── SOFTWARE SUB-NAV ── */
+.sub-nav {
+  position: sticky;
+  top: var(--nav-h);
+  background: var(--white);
+  border-bottom: 1px solid var(--grey-line);
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+}
+.sub-nav-inner {
+  display: flex;
+  gap: 20px;
+  padding: 0 var(--pad-x);
+  max-width: 1200px;
+  width: 100%;
+}
+.sub-nav-link {
+  padding: 18px 0;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--grey-mid);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.sub-nav-link:hover, .sub-nav-link.active {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* ── POINTS FORTS (Talren style) ── */
+.points-forts {
+  padding: 100px 0;
+  background: var(--white);
+}
+.points-forts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.pf-card {
+  padding: 40px;
+  background: var(--grey-bg);
+  border: 1px solid var(--grey-line);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+.pf-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  color: var(--red);
+}
+.pf-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+.pf-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--grey-mid);
+}
+
+/* ── MODULES SECTION ── */
+.modules-section {
+  padding: 100px 0;
+  background: var(--grey-bg);
+}
+.module-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.module-item:last-child { margin-bottom: 0; }
+.module-item.reverse .module-content { order: 2; }
+.module-item.reverse .module-visual { order: 1; }
+.module-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--red);
+  margin-bottom: 12px;
+  display: block;
+}
+.module-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+.module-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--grey-mid);
+  margin-bottom: 32px;
+}
+.module-features {
+  list-style: none;
+  padding: 0;
+}
+.module-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.module-features li svg {
+  color: var(--red);
+  flex-shrink: 0;
+}
+.module-visual {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+.module-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── RESOURCES SECTION ── */
+.resources-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.resource-box {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  background: var(--grey-bg);
+  border-radius: 4px;
+  border: 1px solid var(--grey-line);
+}
+.resource-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--red);
+  flex-shrink: 0;
+}
+.resource-content h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.resource-content p {
+  font-size: 14px;
+  color: var(--grey-mid);
+  margin-bottom: 16px;
+}
+.resource-link {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.resource-link:hover { text-decoration: underline; }
+
+/* ── SOFTWARE HERO (Specific) ── */
+.sw-hero {
+  padding: 160px 0 100px;
+  background: var(--ink);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.sw-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 70% 30%, rgba(200, 16, 46, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.sw-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.sw-hero-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+.sw-hero-lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+.sw-hero-visual {
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.sw-hero-visual img { display: block; width: 100%; }
+
+@media (max-width: 900px) {
+  .sw-hero-grid, .module-item, .points-forts-grid, .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .module-item.reverse .module-content { order: 1; }
+  .module-item.reverse .module-visual { order: 2; }
+}
+
 /* ── TEMOIGNAGES ── */
 .testi-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
 .testi-card {
@@ -630,6 +874,82 @@ nav.site-nav.is-nav-open .nav-burger-bar:nth-child(3) {
 .testi-name { font-weight: 700; font-size: 15px; color: var(--grey-dark); margin-bottom: 3px; }
 .testi-role { font-size: 13px; color: var(--grey-soft); }
 .testi-company { color: var(--red); font-weight: 600; }
+
+/* ── SOFTWARE CATALOG (Main page) ── */
+.page-hero {
+  padding: 140px 0 80px;
+  background: var(--grey-bg);
+  border-bottom: 1px solid var(--grey-line);
+}
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 80px 0;
+}
+.software-card {
+  background: var(--white);
+  border: 1px solid var(--grey-line);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.software-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+  border-color: var(--red);
+}
+.sw-card-header {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+.sw-card-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.software-card:hover .sw-card-cover {
+  transform: scale(1.1);
+}
+.sw-card-body {
+  padding: 40px;
+}
+.sw-card-cat {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--red);
+  margin-bottom: 12px;
+  display: block;
+}
+.sw-card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+.sw-card-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--grey-mid);
+  margin-bottom: 32px;
+  height: 72px;
+  overflow: hidden;
+}
+.sw-card-footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .software-grid { grid-template-columns: 1fr; }
+}
 
 /* ── CTA BAND ── */
 .cta-band {
