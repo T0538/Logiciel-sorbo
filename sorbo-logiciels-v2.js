@@ -201,6 +201,64 @@
 
   initHeroSlider();
 
+  function initTabs() {
+    var tabs = document.querySelectorAll('.tab-btn');
+    if (!tabs.length) return;
+    
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var targetId = this.getAttribute('data-target');
+        if (!targetId) return;
+        
+        var section = this.closest('.premium-tabs-section');
+        section.querySelectorAll('.tab-btn').forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        section.querySelectorAll('.tab-pane').forEach(function(pane) {
+          pane.classList.remove('active');
+        });
+        
+        this.classList.add('active');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  }
+  
+  initTabs();
+
+  function initROICalculator() {
+    var slider = document.getElementById('roi-slider');
+    if (!slider) return;
+    
+    var studiesVal = document.getElementById('roi-studies-val');
+    var hoursVal = document.getElementById('roi-hours');
+    var moneyVal = document.getElementById('roi-money');
+    
+    // Constants for calculation
+    var HOURS_SAVED_PER_STUDY = 12; // 12h saved per study
+    var COST_PER_HOUR = 25000; // 25 000 FCFA engineer hourly rate
+    
+    function formatNumber(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    
+    function updateROI() {
+      var studies = parseInt(slider.value, 10);
+      studiesVal.textContent = studies;
+      
+      var hours = studies * HOURS_SAVED_PER_STUDY;
+      var money = hours * COST_PER_HOUR;
+      
+      hoursVal.innerHTML = formatNumber(hours) + " <span>Heures</span>";
+      moneyVal.innerHTML = formatNumber(money) + " <span>FCFA</span>";
+    }
+    
+    slider.addEventListener('input', updateROI);
+    updateROI();
+  }
+  
+  initROICalculator();
+
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) e.target.classList.add('up');

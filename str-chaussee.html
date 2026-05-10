@@ -67,18 +67,24 @@
 <!-- HERO -->
 <section class="sw-hero">
   <div class="wrap">
-    <div class="sw-hero-grid">
+    <div class="premium-hero-layout">
       <div class="reveal">
         <span class="module-tag">Dimensionnement Routier</span>
-        <h1 class="sw-hero-title">STR-Chaussée</h1>
-        <p class="sw-hero-lead">Analyse et dimensionnement multicouches des structures de chaussées selon les méthodes rationnelles CEBTP, LCPC et SETRA.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn-red">Demander une démo</a>
-          <a href="#points-forts" class="btn-outline-white">Découvrir les points forts</a>
+        <h1 class="premium-hero-title">STR-Chaussée</h1>
+        <p class="premium-hero-lead">La solution logicielle de référence pour le dimensionnement multicouches des structures de chaussées. Conçu pour les ingénieurs exigeants, STR-Chaussée allie puissance de calcul, conformité stricte aux méthodes rationnelles (CEBTP, LCPC, SETRA) et génération automatisée de rapports techniques au sein d'une interface intuitive.</p>
+        <div class="premium-hero-actions">
+          <a href="#modules" class="btn-red">Découvrir les fonctionnalités</a>
+          <a href="contact.html" class="btn-outline-white">Demander une démo</a>
         </div>
       </div>
-      <div class="sw-hero-visual reveal delay-1">
-        <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="STR-Chaussée Interface" loading="lazy" decoding="async">
+      
+      <div class="laptop-mockup-wrapper reveal delay-1">
+        <div class="laptop-frame">
+          <div class="laptop-screen">
+            <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Interface STR-Chaussée" loading="lazy" decoding="async">
+          </div>
+          <div class="laptop-base"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,11 +93,59 @@
 <!-- SUB-NAV -->
 <div class="sub-nav">
   <div class="sub-nav-inner">
+    <a href="#interface" class="sub-nav-link">Aperçu interactif</a>
     <a href="#points-forts" class="sub-nav-link">Points forts</a>
     <a href="#modules" class="sub-nav-link">Modules</a>
     <a href="#ressources" class="sub-nav-link">Ressources</a>
   </div>
 </div>
+
+<!-- INTERFACE INTERACTIVE -->
+<section class="interactive-ui-section" id="interface">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-label">Aperçu du logiciel</div>
+      <h2 class="section-h2">Une interface pensée pour <em>l'ingénieur</em></h2>
+    </div>
+    
+    <div class="interactive-mockup-container reveal delay-1">
+      <div class="laptop-mockup-wrapper static-mockup">
+        <div class="laptop-frame">
+          <div class="laptop-screen">
+            <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Interface STR-Chaussée Interactive" loading="lazy" decoding="async">
+            
+            <!-- Hotspots -->
+            <div class="hotspot" style="top: 25%; left: 30%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Saisie des couches</div>
+                <div class="hotspot-desc">Définissez les matériaux et épaisseurs de chaque couche avec une interface visuelle intuitive.</div>
+              </div>
+            </div>
+            
+            <div class="hotspot" style="top: 60%; left: 65%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Résultats d'analyse</div>
+                <div class="hotspot-desc">Visualisez les contraintes et déformations admissibles instantanément après le calcul.</div>
+              </div>
+            </div>
+            
+            <div class="hotspot" style="top: 80%; left: 40%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Génération de rapports</div>
+                <div class="hotspot-desc">Exportez vos notes de calcul complètes en un clic au format PDF.</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- POINTS FORTS -->
 <section class="points-forts" id="points-forts">
@@ -121,42 +175,98 @@
 </section>
 
 <!-- MODULES -->
-<section class="modules-section" id="modules">
+<section class="premium-tabs-section" id="modules">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head reveal text-center" style="text-align: center;">
       <div class="section-label">Fonctionnalités détaillées</div>
       <h2 class="section-h2">Des modules <em>experts</em> pour vos études</h2>
     </div>
 
-    <div class="module-item reveal">
-      <div class="module-content">
-        <span class="module-tag">Module Structure</span>
-        <h3 class="module-title">Analyse Multicouches</h3>
-        <p class="module-desc">Ce module permet de modéliser des structures de chaussées complexes avec un nombre illimité de couches. Il calcule les sollicitations critiques sous la charge d'essieu de référence.</p>
-        <ul class="module-features">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des modules de déformation</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des critères de fatigue</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prise en compte des conditions d'interface</li>
-        </ul>
-      </div>
-      <div class="module-visual">
-        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=800" alt="STR-Chaussée Analyse" loading="lazy" decoding="async">
+    <div class="tabs-nav-container reveal delay-1">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="str-tab-1">Module Structure</button>
+        <button class="tab-btn" data-target="str-tab-2">Module Trafic</button>
       </div>
     </div>
 
-    <div class="module-item reverse reveal">
-      <div class="module-content">
-        <span class="module-tag">Module Trafic</span>
-        <h3 class="module-title">Gestion du Trafic Lourd</h3>
-        <p class="module-desc">Évaluez avec précision l'agressivité du trafic cumulé sur la durée de service choisie. Intègre les catalogues de trafic standardisés.</p>
-        <ul class="module-features">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul du NE (Nombre d'essieux équivalents)</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse par classe de trafic (T5 à T0)</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Facteurs de croissance géométrique</li>
-        </ul>
+    <div class="tabs-content-wrapper reveal delay-2">
+      <!-- TAB 1: Structure -->
+      <div class="tab-pane active" id="str-tab-1">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Analyse Multicouches</h3>
+            <p class="module-desc">Ce module permet de modéliser des structures de chaussées complexes avec un nombre illimité de couches. Il calcule les sollicitations critiques sous la charge d'essieu de référence.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des modules de déformation</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des critères de fatigue</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prise en compte des conditions d'interface</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=800" alt="STR-Chaussée Analyse" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="module-visual">
-        <img src="https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg?auto=compress&cs=tinysrgb&w=800" alt="STR-Chaussée Trafic" loading="lazy" decoding="async">
+
+      <!-- TAB 2: Trafic -->
+      <div class="tab-pane" id="str-tab-2">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Gestion du Trafic Lourd</h3>
+            <p class="module-desc">Évaluez avec précision l'agressivité du trafic cumulé sur la durée de service choisie. Intègre les catalogues de trafic standardisés.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul du NE (Nombre d'essieux équivalents)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse par classe de trafic (T5 à T0)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Facteurs de croissance géométrique</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800" alt="STR-Chaussée Trafic" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi-section" id="roi-calculator">
+  <div class="wrap">
+    <div class="roi-container reveal">
+      <h2 class="roi-title">Calculez votre rentabilité</h2>
+      <p class="roi-subtitle">Découvrez le gain de temps et d'argent généré par l'automatisation de vos calculs avec STR-Chaussée.</p>
+      
+      <div class="roi-slider-group">
+        <div class="roi-slider-label">
+          <span>Nombre d'études géotechniques par mois :</span>
+          <span class="roi-slider-val" id="roi-studies-val">5</span>
+        </div>
+        <input type="range" min="1" max="50" value="5" class="roi-range" id="roi-slider">
+      </div>
+      
+      <div class="roi-results">
+        <div class="roi-result-box">
+          <div class="roi-result-title">Temps gagné estimé / mois</div>
+          <div class="roi-result-value" id="roi-hours">60 <span>Heures</span></div>
+        </div>
+        <div class="roi-result-box">
+          <div class="roi-result-title">Économies générées / mois</div>
+          <div class="roi-result-value" id="roi-money">1 500 000 <span>FCFA</span></div>
+        </div>
       </div>
     </div>
   </div>

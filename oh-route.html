@@ -67,18 +67,24 @@
 <!-- HERO -->
 <section class="sw-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
   <div class="wrap">
-    <div class="sw-hero-grid">
+    <div class="premium-hero-layout">
       <div class="reveal">
         <span class="module-tag">Hydraulique Routière</span>
-        <h1 class="sw-hero-title">OH-Route v1</h1>
-        <p class="sw-hero-lead">Logiciel expert pour le dimensionnement des ouvrages d'assainissement routier et le calcul des débits de crue en Afrique subsaharienne.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn-red">Demander une démo</a>
-          <a href="#points-forts" class="btn-outline-white">Découvrir les points forts</a>
+        <h1 class="premium-hero-title">OH-Route v1</h1>
+        <p class="premium-hero-lead">Logiciel expert dédié au dimensionnement des ouvrages d'assainissement routier. Maîtrisez le calcul des débits de crue en Afrique subsaharienne et optimisez la conception hydraulique de vos infrastructures grâce à des algorithmes fiables et une base de données intégrée.</p>
+        <div class="premium-hero-actions">
+          <a href="#modules" class="btn-red">Découvrir les fonctionnalités</a>
+          <a href="contact.html" class="btn-outline-white">Demander une démo</a>
         </div>
       </div>
-      <div class="sw-hero-visual reveal delay-1">
-        <img src="https://images.pexels.com/photos/3133688/pexels-photo-3133688.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="OH-Route v1 Interface" loading="lazy" decoding="async">
+      
+      <div class="laptop-mockup-wrapper reveal delay-1">
+        <div class="laptop-frame">
+          <div class="laptop-screen">
+            <img src="https://images.pexels.com/photos/3133688/pexels-photo-3133688.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Interface OH-Route v1" loading="lazy" decoding="async">
+          </div>
+          <div class="laptop-base"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,11 +93,59 @@
 <!-- SUB-NAV -->
 <div class="sub-nav">
   <div class="sub-nav-inner">
+    <a href="#interface" class="sub-nav-link">Aperçu interactif</a>
     <a href="#points-forts" class="sub-nav-link">Points forts</a>
     <a href="#modules" class="sub-nav-link">Modules</a>
     <a href="#ressources" class="sub-nav-link">Ressources</a>
   </div>
 </div>
+
+<!-- INTERFACE INTERACTIVE -->
+<section class="interactive-ui-section" id="interface">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-label">Aperçu du logiciel</div>
+      <h2 class="section-h2">Prenez le contrôle du <em>drainage</em></h2>
+    </div>
+    
+    <div class="interactive-mockup-container reveal delay-1">
+      <div class="laptop-mockup-wrapper static-mockup">
+        <div class="laptop-frame">
+          <div class="laptop-screen">
+            <img src="https://images.pexels.com/photos/3133688/pexels-photo-3133688.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Interface OH-Route Interactive" loading="lazy" decoding="async">
+            
+            <!-- Hotspots -->
+            <div class="hotspot" style="top: 30%; left: 20%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Paramètres Hydrologiques</div>
+                <div class="hotspot-desc">Saisissez facilement les données de votre bassin versant et la pluviométrie locale.</div>
+              </div>
+            </div>
+            
+            <div class="hotspot" style="top: 50%; left: 60%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Choix de l'ouvrage</div>
+                <div class="hotspot-desc">Sélectionnez rapidement un type d'ouvrage (dalot, buse) dans notre bibliothèque intégrée.</div>
+              </div>
+            </div>
+            
+            <div class="hotspot" style="top: 75%; left: 80%;">
+              <div class="hotspot-pin"></div>
+              <div class="hotspot-tooltip">
+                <div class="hotspot-title">Vérification Hydraulique</div>
+                <div class="hotspot-desc">Contrôle visuel automatique des vitesses d'écoulement et de la revanche de sécurité.</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- POINTS FORTS -->
 <section class="points-forts" id="points-forts">
@@ -121,42 +175,98 @@
 </section>
 
 <!-- MODULES -->
-<section class="modules-section" id="modules">
+<section class="premium-tabs-section" id="modules">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head reveal text-center" style="text-align: center;">
       <div class="section-label">Fonctionnalités détaillées</div>
       <h2 class="section-h2">Une solution <em>complète</em> de drainage</h2>
     </div>
 
-    <div class="module-item reveal">
-      <div class="module-content">
-        <span class="module-tag">Module Hydrologie</span>
-        <h3 class="module-title">Estimation des Débits</h3>
-        <p class="module-desc">Calculez les débits de pointe pour différentes périodes de retour (décennale, centennale) en fonction des caractéristiques de vos bassins versants.</p>
-        <ul class="module-features">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse de la pluviométrie locale</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des coefficients de ruissellement</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Détermination du temps de concentration</li>
-        </ul>
-      </div>
-      <div class="module-visual">
-        <img src="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=800" alt="OH-Route v1 Hydrologie" loading="lazy" decoding="async">
+    <div class="tabs-nav-container reveal delay-1">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="oh-tab-1">Module Hydrologie</button>
+        <button class="tab-btn" data-target="oh-tab-2">Module Hydraulique</button>
       </div>
     </div>
 
-    <div class="module-item reverse reveal">
-      <div class="module-content">
-        <span class="module-tag">Module Hydraulique</span>
-        <h3 class="module-title">Dimensionnement d'Ouvrages</h3>
-        <p class="module-desc">Vérifiez la capacité hydraulique de vos ouvrages sous conditions d'écoulement à surface libre ou en charge.</p>
-        <ul class="module-features">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul de la revanche de sécurité</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des vitesses d'autocurage</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Optimisation des sections d'écoulement</li>
-        </ul>
+    <div class="tabs-content-wrapper reveal delay-2">
+      <!-- TAB 1: Hydrologie -->
+      <div class="tab-pane active" id="oh-tab-1">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Estimation des Débits</h3>
+            <p class="module-desc">Calculez les débits de pointe pour différentes périodes de retour (décennale, centennale) en fonction des caractéristiques de vos bassins versants.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse de la pluviométrie locale</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des coefficients de ruissellement</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Détermination du temps de concentration</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.unsplash.com/photo-1544006659-f0b21f04cb1d?auto=format&fit=crop&q=80&w=800" alt="OH-Route v1 Hydrologie" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="module-visual">
-        <img src="https://images.pexels.com/photos/1739855/pexels-photo-1739855.jpeg?auto=compress&cs=tinysrgb&w=800" alt="OH-Route v1 Hydraulique" loading="lazy" decoding="async">
+
+      <!-- TAB 2: Hydraulique -->
+      <div class="tab-pane" id="oh-tab-2">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Dimensionnement d'Ouvrages</h3>
+            <p class="module-desc">Vérifiez la capacité hydraulique de vos ouvrages sous conditions d'écoulement à surface libre ou en charge.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul de la revanche de sécurité</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des vitesses d'autocurage</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Optimisation des sections d'écoulement</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?auto=format&fit=crop&q=80&w=800" alt="OH-Route v1 Hydraulique" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi-section" id="roi-calculator">
+  <div class="wrap">
+    <div class="roi-container reveal">
+      <h2 class="roi-title">Calculez votre rentabilité</h2>
+      <p class="roi-subtitle">Découvrez le gain de temps et d'argent généré par l'automatisation de vos calculs avec OH-Route v1.</p>
+      
+      <div class="roi-slider-group">
+        <div class="roi-slider-label">
+          <span>Nombre d'ouvrages hydrauliques dimensionnés par mois :</span>
+          <span class="roi-slider-val" id="roi-studies-val">5</span>
+        </div>
+        <input type="range" min="1" max="50" value="5" class="roi-range" id="roi-slider">
+      </div>
+      
+      <div class="roi-results">
+        <div class="roi-result-box">
+          <div class="roi-result-title">Temps gagné estimé / mois</div>
+          <div class="roi-result-value" id="roi-hours">60 <span>Heures</span></div>
+        </div>
+        <div class="roi-result-box">
+          <div class="roi-result-title">Économies générées / mois</div>
+          <div class="roi-result-value" id="roi-money">1 500 000 <span>FCFA</span></div>
+        </div>
       </div>
     </div>
   </div>
