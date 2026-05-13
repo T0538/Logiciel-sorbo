@@ -90,15 +90,7 @@
   </div>
 </section>
 
-<!-- SUB-NAV -->
-<div class="sub-nav">
-  <div class="sub-nav-inner">
-    <a href="#interface" class="sub-nav-link">Aperçu interactif</a>
-    <a href="#points-forts" class="sub-nav-link">Points forts</a>
-    <a href="#modules" class="sub-nav-link">Modules</a>
-    <a href="#ressources" class="sub-nav-link">Ressources</a>
-  </div>
-</div>
+
 
 <!-- INTERFACE INTERACTIVE -->
 <section class="interactive-ui-section" id="interface">
@@ -186,6 +178,7 @@
       <div class="tabs-nav">
         <button class="tab-btn active" data-target="oh-tab-1">Module Hydrologie</button>
         <button class="tab-btn" data-target="oh-tab-2">Module Hydraulique</button>
+        <button class="tab-btn" data-target="oh-tab-3">Module Débits</button>
       </div>
     </div>
 
@@ -194,12 +187,12 @@
       <div class="tab-pane active" id="oh-tab-1">
         <div class="tab-grid">
           <div class="tab-text">
-            <h3 class="module-title">Estimation des Débits</h3>
-            <p class="module-desc">Calculez les débits de pointe pour différentes périodes de retour (décennale, centennale) en fonction des caractéristiques de vos bassins versants.</p>
+            <h3 class="module-title">Analyse des Bassins Versants</h3>
+            <p class="module-desc">Déterminez avec précision les caractéristiques physiques de vos zones de collecte. Intègre les paramètres de relief et de couverture végétale.</p>
             <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse de la pluviométrie locale</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des coefficients de ruissellement</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Détermination du temps de concentration</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul automatique de la pente moyenne</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Détermination du coefficient de ruissellement (Kr)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Temps de concentration (Passini, Kirpich)</li>
             </ul>
           </div>
           <div class="tab-visual">
@@ -220,11 +213,11 @@
         <div class="tab-grid">
           <div class="tab-text">
             <h3 class="module-title">Dimensionnement d'Ouvrages</h3>
-            <p class="module-desc">Vérifiez la capacité hydraulique de vos ouvrages sous conditions d'écoulement à surface libre ou en charge.</p>
+            <p class="module-desc">Vérifiez la capacité de vos dalots et buses sous conditions d'écoulement critique. Optimisez les sections pour réduire les coûts.</p>
             <ul class="module-features">
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul de la revanche de sécurité</li>
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des vitesses d'autocurage</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Optimisation des sections d'écoulement</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des pertes de charge à l'entrée</li>
             </ul>
           </div>
           <div class="tab-visual">
@@ -237,6 +230,86 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Débits -->
+      <div class="tab-pane" id="oh-tab-3">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Méthodes de Crues (Afrique)</h3>
+            <p class="module-desc">Application directe des méthodes calibrées pour le contexte de l'Afrique de l'Ouest et Centrale.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Méthode ORSTOM (Sahel et Forêt)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Méthode Rationnelle et CIEH</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Périodes de retour de 2 à 100 ans</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.pexels.com/photos/3133688/pexels-photo-3133688.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="OH-Route v1 Méthodes" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGIE TECHNIQUE -->
+<section class="section grey-bg">
+  <div class="wrap">
+    <div class="product-grid flip">
+      <div class="product-info reveal">
+        <span class="module-tag">Ingénierie de l'Eau</span>
+        <h2 class="section-h2">Maîtrisez les <em>phénomènes de crue</em></h2>
+        <p class="product-desc">OH-Route v1 est conçu pour répondre aux spécificités hydrologiques des régions tropicales. Le logiciel permet de passer rapidement de la donnée brute de terrain à un ouvrage parfaitement dimensionné et sécurisé.</p>
+        <div class="product-feats">
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Précision Hydrologique :</strong> Intégration des abaques régionaux (CIEH).</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Sécurité des Ouvrages :</strong> Alerte automatique en cas de dépassement de la capacité hydraulique.</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Export PDF :</strong> Dossiers de calcul prêts pour soumission aux autorités.</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-panel reveal delay-1">
+        <div class="panel-header">
+          <div class="panel-title">Capacité de l'Ouvrage</div>
+          <div class="panel-status">OK</div>
+        </div>
+        <div class="panel-metric-grid">
+          <div class="panel-metric">
+            <div class="panel-metric-label">Débit de Crue (Q10)</div>
+            <div class="panel-metric-val">12.5 m³/s</div>
+          </div>
+          <div class="panel-metric">
+            <div class="panel-metric-label">Capacité Dalot</div>
+            <div class="panel-metric-val red">15.2 m³/s</div>
+          </div>
+        </div>
+        <div class="panel-bar-section">
+          <div class="panel-bar-title">Taux de Remplissage</div>
+          <div class="p-bar">
+            <div class="p-bar-name">Dalot 2x2</div>
+            <div class="p-bar-track"><div class="p-bar-fill" style="width: 82%;"></div></div>
+            <div class="p-bar-val">82%</div>
+          </div>
+        </div>
+        <div class="panel-result">
+          <div class="panel-result-icon">💧</div>
+          <div class="panel-result-text">Revanche de sécurité : <span class="panel-result-val">36 cm</span> (Conforme).</div>
         </div>
       </div>
     </div>

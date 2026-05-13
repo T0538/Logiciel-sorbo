@@ -90,15 +90,7 @@
   </div>
 </section>
 
-<!-- SUB-NAV -->
-<div class="sub-nav">
-  <div class="sub-nav-inner">
-    <a href="#interface" class="sub-nav-link">Aperçu interactif</a>
-    <a href="#points-forts" class="sub-nav-link">Points forts</a>
-    <a href="#modules" class="sub-nav-link">Modules</a>
-    <a href="#ressources" class="sub-nav-link">Ressources</a>
-  </div>
-</div>
+
 
 <!-- INTERFACE INTERACTIVE -->
 <section class="interactive-ui-section" id="interface">
@@ -186,6 +178,7 @@
       <div class="tabs-nav">
         <button class="tab-btn active" data-target="str-tab-1">Module Structure</button>
         <button class="tab-btn" data-target="str-tab-2">Module Trafic</button>
+        <button class="tab-btn" data-target="str-tab-3">Module Matériaux</button>
       </div>
     </div>
 
@@ -194,12 +187,12 @@
       <div class="tab-pane active" id="str-tab-1">
         <div class="tab-grid">
           <div class="tab-text">
-            <h3 class="module-title">Analyse Multicouches</h3>
-            <p class="module-desc">Ce module permet de modéliser des structures de chaussées complexes avec un nombre illimité de couches. Il calcule les sollicitations critiques sous la charge d'essieu de référence.</p>
+            <h3 class="module-title">Analyse Multicouches (Burmister)</h3>
+            <p class="module-desc">Modélisation précise des structures de chaussées souples et semi-rigides. Calculez les contraintes (sigma) et déformations (epsilon) à chaque interface.</p>
             <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des modules de déformation</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des critères de fatigue</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prise en compte des conditions d'interface</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des modules de déformation réversibles</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des critères de fatigue (Alizé)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Optimisation automatique des épaisseurs</li>
             </ul>
           </div>
           <div class="tab-visual">
@@ -219,12 +212,12 @@
       <div class="tab-pane" id="str-tab-2">
         <div class="tab-grid">
           <div class="tab-text">
-            <h3 class="module-title">Gestion du Trafic Lourd</h3>
-            <p class="module-desc">Évaluez avec précision l'agressivité du trafic cumulé sur la durée de service choisie. Intègre les catalogues de trafic standardisés.</p>
+            <h3 class="module-title">Gestion du Trafic Lourd (NE)</h3>
+            <p class="module-desc">Évaluez l'agressivité du trafic sur la durée de vie de l'ouvrage (10, 15, 20 ans). Intègre les classes de trafic T5 à T0+.</p>
             <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul du NE (Nombre d'essieux équivalents)</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Analyse par classe de trafic (T5 à T0)</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Facteurs de croissance géométrique</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul du Nombre d'Essieux Equivalents (NE)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Facteur d'agressivité moyen (CAM) paramétrable</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prise en compte du taux de croissance annuel</li>
             </ul>
           </div>
           <div class="tab-visual">
@@ -237,6 +230,95 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Matériaux -->
+      <div class="tab-pane" id="str-tab-3">
+        <div class="tab-grid">
+          <div class="tab-text">
+            <h3 class="module-title">Bibliothèque de Matériaux</h3>
+            <p class="module-desc">Accédez à une base de données exhaustive des matériaux routiers conformes au guide technique CEBTP et LCPC.</p>
+            <ul class="module-features">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Graveleux latéritiques cimentés</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Bétons bitumineux (BB) et Graves bitume (GB)</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Sols traités aux liants hydrauliques</li>
+            </ul>
+          </div>
+          <div class="tab-visual">
+            <div class="laptop-mockup-wrapper static-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-screen">
+                  <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="STR-Chaussée Matériaux" loading="lazy" decoding="async">
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGIE TECHNIQUE -->
+<section class="section grey-bg">
+  <div class="wrap">
+    <div class="product-grid">
+      <div class="product-info reveal">
+        <span class="module-tag">Conformité Normative</span>
+        <h2 class="section-h2">Une méthodologie <em>éprouvée</em></h2>
+        <p class="product-desc">STR-Chaussée repose sur la méthode rationnelle de dimensionnement, largement adoptée par les grands donneurs d'ordres en Afrique de l'Ouest. Le logiciel automatise les calculs complexes de la mécanique des chaussées pour garantir la pérennité de vos infrastructures.</p>
+        <div class="product-feats">
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Guide CEBTP :</strong> Référence pour les pays de la zone intertropicale.</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Guide LCPC-SETRA :</strong> Application des modèles de fatigue français.</div>
+          </div>
+          <div class="product-feat">
+            <div class="product-feat-bullet"></div>
+            <div class="product-feat-text"><strong>Rapports de Contrôle :</strong> Notes de calcul éditables pour validation par les bureaux de contrôle.</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-panel reveal delay-1" id="str-structure-panel">
+        <div class="panel-header">
+          <div class="panel-title">Exemple de Structure</div>
+          <div class="panel-status">Calculé</div>
+        </div>
+        <div class="panel-rows">
+          <div class="panel-row">
+            <span class="panel-row-label">Couche de roulement (BBSG)</span>
+            <span class="panel-row-val">5 cm</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-row-label">Couche de base (GNT)</span>
+            <span class="panel-row-val">20 cm</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-row-label">Couche de fondation (Latérite)</span>
+            <span class="panel-row-val">25 cm</span>
+          </div>
+        </div>
+        <div class="panel-bar-section">
+          <div class="panel-bar-title">Vérification de Fatigue</div>
+          <div class="p-bar">
+            <div class="p-bar-name">Contrainte</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="65"></div></div>
+            <div class="p-bar-val">65%</div>
+          </div>
+          <div class="p-bar">
+            <div class="p-bar-name">Déformation</div>
+            <div class="p-bar-track"><div class="p-bar-fill js-str-bar" data-width="42"></div></div>
+            <div class="p-bar-val">42%</div>
+          </div>
+        </div>
+        <div class="panel-result">
+          <div class="panel-result-icon">✅</div>
+          <div class="panel-result-text">Structure <span class="panel-result-val">Admissible</span> selon les critères LCPC.</div>
         </div>
       </div>
     </div>
