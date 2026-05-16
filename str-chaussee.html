@@ -167,97 +167,112 @@
 </section>
 
 <!-- MODULES -->
-<section class="premium-tabs-section" id="modules">
-  <div class="wrap">
-    <div class="section-head reveal text-center" style="text-align: center;">
-      <div class="section-label">Fonctionnalités détaillées</div>
-      <h2 class="section-h2">Des modules <em>experts</em> pour vos études</h2>
+<section class="modules-immersive-section grey-bg" id="modules">
+  <div class="wrap-large">
+    <div class="section-head reveal text-center" style="text-align: center; margin-bottom: 100px;">
+      <div class="section-label" style="justify-content: center;">Fonctionnalités détaillées</div>
+      <h2 class="section-h2 large">Des modules <em>experts</em> pour vos études</h2>
     </div>
 
-    <div class="tabs-nav-container reveal delay-1">
-      <div class="tabs-nav">
-        <button class="tab-btn active" data-target="str-tab-1">Module Structure</button>
-        <button class="tab-btn" data-target="str-tab-2">Module Trafic</button>
-        <button class="tab-btn" data-target="str-tab-3">Module Matériaux</button>
-      </div>
-    </div>
-
-    <div class="tabs-content-wrapper reveal delay-2">
-      <!-- TAB 1: Structure -->
-      <div class="tab-pane active" id="str-tab-1">
-        <div class="tab-grid">
-          <div class="tab-text">
-            <h3 class="module-title">Analyse Multicouches (Burmister)</h3>
-            <p class="module-desc">Modélisation précise des structures de chaussées souples et semi-rigides. Calculez les contraintes (sigma) et déformations (epsilon) à chaque interface.</p>
-            <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul des modules de déformation réversibles</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Vérification des critères de fatigue (Alizé)</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Optimisation automatique des épaisseurs</li>
-            </ul>
-          </div>
-          <div class="tab-visual">
-            <div class="laptop-mockup-wrapper static-mockup">
-              <div class="laptop-frame">
-                <div class="laptop-screen">
-                  <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=800" alt="STR-Chaussée Analyse" loading="lazy" decoding="async">
-                </div>
-                <div class="laptop-base"></div>
-              </div>
+    <!-- MODULE 1: Structure -->
+    <div class="module-immersive reveal" id="str-mod-1">
+      <div class="module-immersive-grid">
+        <div class="module-immersive-content">
+          <span class="module-tag">Module Structure</span>
+          <h3 class="module-immersive-title">Analyse Multicouches (Burmister)</h3>
+          <p class="module-immersive-desc">Modélisation précise des structures de chaussées souples et semi-rigides. Calculez les contraintes (sigma) et déformations (epsilon) à chaque interface avec une précision inégalée.</p>
+          <div class="module-feature-list">
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+              <div class="mf-text">Calcul des modules de déformation réversibles</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+              <div class="mf-text">Vérification des critères de fatigue (Alizé)</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+              <div class="mf-text">Optimisation automatique des épaisseurs</div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- TAB 2: Trafic -->
-      <div class="tab-pane" id="str-tab-2">
-        <div class="tab-grid">
-          <div class="tab-text">
-            <h3 class="module-title">Gestion du Trafic Lourd (NE)</h3>
-            <p class="module-desc">Évaluez l'agressivité du trafic sur la durée de vie de l'ouvrage (10, 15, 20 ans). Intègre les classes de trafic T5 à T0+.</p>
-            <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Calcul du Nombre d'Essieux Equivalents (NE)</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Facteur d'agressivité moyen (CAM) paramétrable</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prise en compte du taux de croissance annuel</li>
-            </ul>
+        <div class="module-immersive-visual">
+          <div class="visual-wrapper">
+            <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=1200" alt="STR-Chaussée Analyse" loading="lazy" decoding="async">
           </div>
-          <div class="tab-visual">
-            <div class="laptop-mockup-wrapper static-mockup">
-              <div class="laptop-frame">
-                <div class="laptop-screen">
-                  <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800" alt="STR-Chaussée Trafic" loading="lazy" decoding="async">
-                </div>
-                <div class="laptop-base"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 3: Matériaux -->
-      <div class="tab-pane" id="str-tab-3">
-        <div class="tab-grid">
-          <div class="tab-text">
-            <h3 class="module-title">Bibliothèque de Matériaux</h3>
-            <p class="module-desc">Accédez à une base de données exhaustive des matériaux routiers conformes au guide technique CEBTP et LCPC.</p>
-            <ul class="module-features">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Graveleux latéritiques cimentés</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Bétons bitumineux (BB) et Graves bitume (GB)</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Sols traités aux liants hydrauliques</li>
-            </ul>
-          </div>
-          <div class="tab-visual">
-            <div class="laptop-mockup-wrapper static-mockup">
-              <div class="laptop-frame">
-                <div class="laptop-screen">
-                  <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="STR-Chaussée Matériaux" loading="lazy" decoding="async">
-                </div>
-                <div class="laptop-base"></div>
-              </div>
-            </div>
+          <div class="visual-floating-badge">
+            <span class="badge-icon">📊</span> Méthode Rationnelle Intégrée
           </div>
         </div>
       </div>
     </div>
+
+    <!-- MODULE 2: Trafic -->
+    <div class="module-immersive reverse reveal delay-1" id="str-mod-2">
+      <div class="module-immersive-grid">
+        <div class="module-immersive-content">
+          <span class="module-tag">Module Trafic</span>
+          <h3 class="module-immersive-title">Gestion du Trafic Lourd (NE)</h3>
+          <p class="module-immersive-desc">Évaluez l'agressivité du trafic sur la durée de vie de l'ouvrage (10, 15, 20 ans). Intègre les classes de trafic T5 à T0+ pour une fiabilité de dimensionnement maximale.</p>
+          <div class="module-feature-list">
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+              <div class="mf-text">Calcul du Nombre d'Essieux Equivalents (NE)</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
+              <div class="mf-text">Facteur d'agressivité moyen (CAM) paramétrable</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+              <div class="mf-text">Prise en compte du taux de croissance annuel</div>
+            </div>
+          </div>
+        </div>
+        <div class="module-immersive-visual">
+          <div class="visual-wrapper">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=1200" alt="STR-Chaussée Trafic" loading="lazy" decoding="async">
+          </div>
+          <div class="visual-floating-badge" style="right: 48px; left: auto;">
+            <span class="badge-icon">🚛</span> Trafic T5 à T0+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 3: Matériaux -->
+    <div class="module-immersive reveal delay-2" id="str-mod-3">
+      <div class="module-immersive-grid">
+        <div class="module-immersive-content">
+          <span class="module-tag">Module Matériaux</span>
+          <h3 class="module-immersive-title">Bibliothèque de Matériaux</h3>
+          <p class="module-immersive-desc">Accédez à une base de données exhaustive des matériaux routiers conformes au guide technique CEBTP et LCPC, prêts à être utilisés dans vos projets.</p>
+          <div class="module-feature-list">
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+              <div class="mf-text">Graveleux latéritiques cimentés</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg></div>
+              <div class="mf-text">Bétons bitumineux (BB) et Graves bitume (GB)</div>
+            </div>
+            <div class="module-feature-item">
+              <div class="mf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+              <div class="mf-text">Sols traités aux liants hydrauliques</div>
+            </div>
+          </div>
+        </div>
+        <div class="module-immersive-visual">
+          <div class="visual-wrapper">
+            <img src="https://images.pexels.com/photos/1750754/pexels-photo-1750754.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="STR-Chaussée Matériaux" loading="lazy" decoding="async">
+          </div>
+          <div class="visual-floating-badge">
+            <span class="badge-icon">🏗️</span> +50 Matériaux CEBTP
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

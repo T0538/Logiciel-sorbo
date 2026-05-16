@@ -201,31 +201,6 @@
 
   initHeroSlider();
 
-  function initTabs() {
-    var tabs = document.querySelectorAll('.tab-btn');
-    if (!tabs.length) return;
-    
-    tabs.forEach(function(tab) {
-      tab.addEventListener('click', function() {
-        var targetId = this.getAttribute('data-target');
-        if (!targetId) return;
-        
-        var section = this.closest('.premium-tabs-section');
-        section.querySelectorAll('.tab-btn').forEach(function(btn) {
-          btn.classList.remove('active');
-        });
-        section.querySelectorAll('.tab-pane').forEach(function(pane) {
-          pane.classList.remove('active');
-        });
-        
-        this.classList.add('active');
-        document.getElementById(targetId).classList.add('active');
-      });
-    });
-  }
-  
-  initTabs();
-
   function initROICalculator() {
     var slider = document.getElementById('roi-slider');
     if (!slider) return;
